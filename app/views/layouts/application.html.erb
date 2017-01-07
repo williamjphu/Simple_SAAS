@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SimpleSaas</title>
+    <title>MyPageSAAS</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -20,8 +20,12 @@
   					<span class="icon-bar"></span>
   					<span class="icon-bar"></span>
   				</button>
-  				<!-- Rails syntax code below -->
-  				<%= link_to "MyPageSAAS", root_path, class: 'navbar-brand' %>
+  				 <!-- Rails syntax code below -->
+  				<%= link_to root_path, class: 'navbar-brand' do %>
+  					<i class="fa fa-user-circle-o"></i>
+  					MyPageSAAS <!-- Title of the page -->
+  				<% end %>
+
   			</div>
 
   			<div class="collapse navbar-collapse" id="main-nav-collapse">

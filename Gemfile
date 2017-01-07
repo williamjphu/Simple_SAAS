@@ -12,17 +12,22 @@ gem 'rails', '5.0.1'
 gem 'sqlite3', group: [:development, :test]
 # Use postgresql as the database for production
 
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 5.0'
 # Add Bootstap Library to the app for Style
 gem 'bootstrap-sass', '3.3.1'
+# Add Font Awesome Library for icons
+gem 'font-awesome-sass', '4.7.0'
 
+# Use postgresql as the database for production
 group :production do 
   gem 'pg'
   gem 'rails_12factor'
 end
+
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
