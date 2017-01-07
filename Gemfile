@@ -13,7 +13,7 @@ gem 'sqlite3', group: [:development, :test]
 # Use postgresql as the database for production
 
 # Add Bootstap Library to the app for Style
-gem 'bootstrap-sass', '3.3.1'
+gem 'bootstrap-sass', '~> 3.3.6'
 
 group :production do 
   gem 'pg'
