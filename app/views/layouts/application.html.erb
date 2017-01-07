@@ -33,7 +33,7 @@
   					<!-- Ruby code below -->
   					<!-- "/about" or abou_path -->
   					<li><%= link_to "About", about_path %></li>
-  					<li><%= link_to "Contact", "#" %></li>
+  					<li><%= link_to "Contact", new_contact_path %></li>
   					<li><%= link_to "FAQ", "#" %></li>
   				</ul>
   			</div>
@@ -41,6 +41,10 @@
   	</nav>
 
   	<div class="container">
+  		<% flash.each do |key, value| %>
+  			<%= content_tag :div, value, class: "alert alert-#{key}" %>
+  		<% end %>
+    	
     	<%= yield %>
 	</div>
 
