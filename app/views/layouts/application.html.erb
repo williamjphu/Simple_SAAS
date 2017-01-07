@@ -9,7 +9,9 @@
   </head>
 
   <body>
-  	<nav class="navbar navbar-default navbar-static-top" role="navigation">
+
+  	<!-- Navigation bar for the app -->
+  	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
   		<div class='container'>
   			<div class="navbar-header">
   				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
@@ -18,18 +20,25 @@
   					<span class="icon-bar"></span>
   					<span class="icon-bar"></span>
   				</button>
-  				<%= link_to "SaaS", root_path, class: 'navbar-brand' %>
+  				<!-- Rails syntax code below -->
+  				<%= link_to "MyPageSAAS", root_path, class: 'navbar-brand' %>
   			</div>
 
   			<div class="collapse navbar-collapse" id="main-nav-collapse">
   				<ul class="nav navbar-nav navbar-right">
-  					<li><%= link_to "About", "about" %></li>
+  					<!-- Ruby code below -->
+  					<!-- "/about" or abou_path -->
+  					<li><%= link_to "About", about_path %></li>
+  					<li><%= link_to "Contact", "#" %></li>
+  					<li><%= link_to "FQA", "#" %></li>
   				</ul>
   			</div>
   		</div>
   	</nav>
 
-    <%= yield %>
+  	<div class="container">
+    	<%= yield %>
+	</div>
 
   </body>
 </html>
