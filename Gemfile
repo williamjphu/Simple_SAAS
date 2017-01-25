@@ -18,6 +18,8 @@ gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass', '3.3.1'
 # Add Font Awesome Library for icons
 gem 'font-awesome-sass', '4.7.0'
+# Gem for users 
+gem 'devise', '4.2.0'
 
 # Use postgresql as the database for production
 group :production do 

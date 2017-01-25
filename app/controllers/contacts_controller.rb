@@ -6,7 +6,7 @@ class ContactsController < ApplicationController
 
 	# Handle form submission
 	def create
-		#Create an instance variable
+		#Create an instance variable  
 		@contact = Contact.new(contact_params)
 
 		if @contact.save
