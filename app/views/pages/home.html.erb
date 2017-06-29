@@ -4,9 +4,28 @@
 	<h3>Doing some practices for the sake of my life</h3>
 </div>
 
-<div>
+<div class="row">
+	<div class="col-md-6">
+		<div class="well">
+			<h2 class="text-center">Basic Plan</h2>
+			<h4> Sign up for a free and basic access to the webpage.</h4>
+			<br/>
+			<%= link_to "Sign up for Free", new_user_registration_path(plan: @basic_plan.id), class: "btn btn-primary btn-lg btn-block" %>
+		</div>
+	</div>
+
+	<div class="col-md-6">
+		<div class="well">
+			<h2 class="text-center">Pro Plan</h2>
+			<h4> Sign up for a pro account for $10/month to get FULL access to the webpage.</h4>
+			<%= link_to "Sign up with Pro", new_user_registration_path(plan: @pro_plan.id), class: "btn btn-success btn-lg btn-block" %>
+		</div>
+	</div>
+</div>
+
+<div class="container">
 	<ul>
 		<li><img src="https://www.ccsf.edu/Images/logo.png" height="450px" class="pull-left"></li>
-		<li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/27/San_Jose_State_Spartans_Logo.svg/996px-San_Jose_State_Spartans_Logo.svg.png" height="380px" class="pull-right"></li>
+		<li><img src="https://s-media-cache-ak0.pinimg.com/236x/c5/44/b6/c544b653cc441b6b0c0ea52639a40dd9--san-jose-mat.jpg" height="400px" class="pull-right"></li>
 	</ul>	
 </div>
