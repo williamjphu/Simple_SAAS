@@ -18,8 +18,15 @@ gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass', '3.3.1'
 # Add Font Awesome Library for icons
 gem 'font-awesome-sass', '4.7.0'
-# Gem for users 
+
+# Gem for users authentication/logins 
 gem 'devise', '4.2.0'
+
+# Gem stripe for online payment
+gem 'stripe', '1.57.1'
+
+# To hide secret keys 
+gem 'figaro', '1.1.1'
 
 # Use postgresql as the database for production
 group :production do 
@@ -39,8 +46,10 @@ gem 'coffee-rails', '~> 4.2'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
+# gem 'turbolinks', '~> 5' // May be some conflicts with Stripe
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
