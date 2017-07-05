@@ -24,6 +24,7 @@ gem 'devise', '4.2.0'
 
 # Gem stripe for online payment
 gem 'stripe', '1.57.1'
+#gem 'stripe_event', '1.5.0'
 
 # To hide secret keys 
 gem 'figaro', '1.1.1'
